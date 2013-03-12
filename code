@@ -1,0 +1,77 @@
+#include<iostream>
+#include<cstdlib>
+#include<iomanip>//for rand
+#include<ctime> //time
+using namespace std;
+int main()
+
+char Fight;
+
+cout<<"Press F to fight ";
+cout<<"or Press any key for Quit"<<endl;
+cin >>Fight;
+
+if(put_out_fire == 'F' || put_out_fire == 'f')/////story my continues in here//////
+{
+
+// static unsigned long Gobling_Damage = 1;
+
+///////weapons & Damage///
+double Sword_of_Might = 3;
+double Flint_Gun = 4;
+double Small_Dagger = 1;
+double Granade = 6;
+double health = 100;
+double health_potion_level_1 = 10;
+double Nature_Damage = 2;
+double Gobling_Damage;
+double Gobling_health = 60;
+double Damaged_health;
+//////////////////////////
+
+int rand,choice;
+char S ,H, N;
+
+
+{
+
+
+//monster always attaks first
+
+do (Gobling_health > 0)
+
+{
+
+Gobling_Damage = 1 + rand() 10;
+
+cout<<"your health "<<health<<endl;
+cout<<"the Gobling "<<Gobling_health<<endl;
+
+
+cout<<"The Goblin did"<<Gobling_Damage<<"that hurts"<<endl;
+
+health = Gobling_Damage - Damaged_health ;
+
+cout<<"your health is "<<health<<endl;
+
+system("pause");
+
+}
+cout<<"pick a weapon and fight or he will kill you!"<<endl;
+
+cout<<"S:Small Dagger attack 1"<<endl;
+cout<<"H:health potion health +10"<<endl;
+cout<<"N:Nature Spell attack 2"<<endl;
+cout<<"pick or die"<<endl;
+cin >>choice;
+
+
+}
+
+}
+
+else cout<<"You have failed do anything to save your friends or your city"<<endl;
+
+return 0;
+
+}
